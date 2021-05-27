@@ -36,7 +36,7 @@ let repoMarkup = `
 `;
 
 const githubData = {
-  token: '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',
+  token: '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',
 };
 
 const body = {

@@ -219,6 +219,10 @@
   background: #4f5d95;
 }
 
+.all__repos .repo__footer .language-container .bull.CSS::before {
+  background: #563d7c;
+}
+
 .all__repos .repo__footer .language-container.null {
   display: none;
 }
