@@ -50,6 +50,11 @@
   border: 0;
   color: #fff;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #198b3a;
 }
 
 .loader .load {
