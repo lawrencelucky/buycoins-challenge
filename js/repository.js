@@ -1,4 +1,4 @@
-import { token } from './auth';
+import { token } from './auth.js';
 
 const repositoryContainer = document.querySelector('.all__repos');
 const totalRepoCount = document.querySelectorAll('.total-repo-count');
