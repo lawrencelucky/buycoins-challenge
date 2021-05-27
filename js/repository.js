@@ -35,10 +35,6 @@ let repoMarkup = `
 </div>
 `;
 
-const githubData = {
-  token: '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',
-};
-
 const body = {
   query: `
     query { 
@@ -68,7 +64,7 @@ const body = {
 const baseURL = 'https://api.github.com/graphql';
 const headers = {
   'Content-Type': 'application/json',
-  Authorization: `bearer ${githubData.token}`,
+  Authorization: `bearer ${token}`,
 };
 
 fetch(baseURL, {
