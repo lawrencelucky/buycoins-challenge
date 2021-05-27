@@ -1,3 +1,5 @@
+import { token } from './auth';
+
 const repositoryContainer = document.querySelector('.all__repos');
 const totalRepoCount = document.querySelectorAll('.total-repo-count');
 const fullname = document.querySelector('.name');
@@ -35,10 +37,6 @@ let repoMarkup = `
 </div>
 `;
 
-const githubData = {
-  token: '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',
-};
-
 const body = {
   query: `
     query { 
@@ -68,7 +66,7 @@ const body = {
 const baseURL = 'https://api.github.com/graphql';
 const headers = {
   'Content-Type': 'application/json',
-  Authorization: `bearer ${githubData.token}`,
+  Authorization: `bearer ${token}`,
 };
 
 fetch(baseURL, {
