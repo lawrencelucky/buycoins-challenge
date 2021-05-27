@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buycoins Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css//profile.css" />
+    <link rel="shortcut icon" href="./assets/github.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="left__container">
+        <div class="mobile__view">
+          <div class="navbar__toggler">
+            <img
+              src="./assets/menu.svg"
+              alt="toggler"
+              class="toggler"
+              id="toggler"
+            />
+          </div>
+          <div class="logo__container">
+            <a href="./index.html">
+              <img
+                src="./assets/github.svg"
+                alt="logo"
+                class="logo"
+                draggable="false"
+              />
+            </a>
+          </div>
+          <ul class="nav__ul">
+            <li class="nav__list-items repo">
+              <a href="./repository.html" class="nav__link"> Repositories </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile__view--dropdown">
+          <div class="search__container">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search or jump to..."
+            />
+            <div class="search__icon">/</div>
+          </div>
+          <div class="navbar__container">
+            <nav class="nav">
+              <ul class="nav__ul">
+                <li class="nav__list-items dashboard">Dashboard</li>
+                <li class="nav__list-items">Pull requests</li>
+                <li class="nav__list-items">Issues</li>
+                <li class="nav__list-items">Marketplace</li>
+                <li class="nav__list-items">Explore</li>
+                <li class="nav__list-items code">Codespaces</li>
+                <li class="nav__list-items sponsor">Sponsors</li>
+                <li class="nav__list-items settings">Settings</li>
+                <li class="nav__list-items image">
+                  <div class="profile__image">
+                    <img
+                      src="https://avatars.githubusercontent.com/u/43374545?v=4"
+                      alt=""
+                      class="profile"
+                    />
+                    <p>lawrencelucky</p>
+                  </div>
+                </li>
+                <li class="nav__list-items image">
+                  <div class="profile__image">
+                    <img src="./assets/logout.svg" alt="" class="signout" />
+                    <p>Sign out</p>
+                  </div>
+                </li>
+                <li class="nav__list-items repo">
+                  <a href="./repository.html" class="nav__link">
+                    Repositories
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="right__container">
+        <div class="notification__icon">
+          <img
+            src="./assets/bell.svg"
+            alt="bell"
+            class="icon"
+            draggable="false"
+          />
+        </div>
+        <div class="plus__icon">
+          <img
+            src="./assets/plus.svg"
+            alt="plus"
+            class="icon"
+            draggable="false"
+          />
+          <img src="./assets/caret-down.svg" alt="caret" class="caret-icon" />
+        </div>
+        <div class="profile__image">
+          <img
+            src="https://avatars.githubusercontent.com/u/43374545?v=4"
+            alt="profile"
+            class="image"
+            draggable="false"
+          />
+          <img src="./assets/caret-down.svg" alt="caret" class="caret-icon" />
+        </div>
+      </div>
+    </header>
+
+    <section class="search__section">
+      <div class="error-message">
+        <p>Github user not found!</p>
+        <p>Check your spellings or search for a new user.</p>
+      </div>
+      <form class="search-container">
+        <input type="text" placeholder="Search for a user..." required />
+        <button class="submit-btn">Submit</button>
+      </form>
+      <div class="loader">
+        <img src="./assets/spinner.svg" alt="" class="load" />
+      </div>
+    </section>
+
+    <section class="profile__section">
+      <div class="profile-container">
+        <div class="left-container">
+          <div class="image-container">
+            <img src="" alt="" draggable="false" class="profile-image" />
+          </div>
+          <div class="profile-detail">
+            <h2 class="name"></h2>
+            <p class="username"></p>
+            <p class="bio"></p>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="info-container">
+            <img
+              src="./assets/link.svg"
+              alt="svg"
+              class="icon"
+              draggable="false"
+            />
+            <a href="" target="_blank" class="website-link"></a>
+          </div>
+
+          <div class="info-container">
+            <img
+              src="./assets/location.svg"
+              alt="svg"
+              class="icon"
+              draggable="false"
+            />
+            <p class="info-detail location"></p>
+          </div>
+
+          <div class="info-container">
+            <img
+              src="./assets/book-closed.svg"
+              alt="svg"
+              class="icon"
+              draggable="false"
+            />
+            <p class="info-detail">
+              <span class="repo-number">0</span> Public repositories
+            </p>
+          </div>
+
+          <div class="info-container">
+            <img
+              src="./assets/follow.svg"
+              alt="svg"
+              class="icon"
+              draggable="false"
+            />
+            <p class="info-detail">
+              <span class="followers-number">0</span> Followers
+            </p>
+          </div>
+
+          <div class="info-container">
+            <img
+              src="./assets/follow.svg"
+              alt="svg"
+              class="icon"
+              draggable="false"
+            />
+            <p class="info-detail">
+              <span class="following-number">0</span> Following
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/search.js"></script>
+    <script src="./js/toggler.js"></script>
+  </body>
+</html>
